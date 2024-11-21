@@ -4,35 +4,49 @@
     <link rel="stylesheet" href="calc.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="calc.js"></script>
+    <link rel="icon" href="logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <h1>Calculator</h1>
+    
 </head>
 <body>
-    <div class="calcc">
-    <div class="box1">
-        <input class="typee" type="text" id="appendnumber">
-        <button class="id13" id="ac" onclick="cleaar()">AC</button>
-        <button class="div" id="ar" onclick="appendnumber('/')">/</button>
-        <button class="mul" id="ar" onclick="appendnumber('*')">*</button> 
-        <button class="id10" id="ac" onclick="clearone()"><i class="fa-solid fa-delete-left"></i></button><br>
-        <button class="seven" id="num" onclick="appendnumber('7')">7</button>
-        <button class="eight" id="num" onclick="appendnumber('8')">8</button>
-        <button class="nine" id="num" onclick="appendnumber('9')">9</button>
-        <button class="add" id="ar" onclick="appendnumber('+')">+</button>
-        <button class="four" id="num" onclick="appendnumber('4')">4</button>
-        <button class="five" id="num" onclick="appendnumber('5')">5</button>
-        <button class="six" id="num" onclick="appendnumber('6')">6</button>
-        <button class="sub" id="ar" onclick="appendnumber('-')" >-</button>
-        <button class="id5" id="num" onclick="appendnumber('1')">1</button>
-        <button class="id5" id="num" onclick="appendnumber('2')">2</button>
-        <button class="id5" onclick="appendnumber('3')" >3</button>
-        <button class="id11" id="ar" onclick="appendnumber('0')">0</button>
-        <button class="id8" id="num" onclick="appendnumber('00')">00</button>
-        <button class="id6" id="num" onclick="appendnumber('.')">.</button>
-        <button class="id6" id="equal" onclick="calculation()">=</button>
-     </div>
+    <h1>Calculator</h1>
+    <div class="outerbox">
+    <table>
+        <tr>
+            <th colspan="4" > <input type="text"id="appendnumber" class="in" ></th>
+        </tr>
+        <tr class="ab">
+            <td><button id="ac" class="br" onclick="cleaar()">AC</button></td>
+            <td><button id="ar" class="br"  onclick="appendnumber('/')">/</button></td>
+            <td><button id="ar" class="br"  onclick="appendnumber('*')">*</button></td>
+            <td><button id="ac" class="br" onclick="clearone()"><i class="fa-solid fa-delete-left"></i></button></td>
+        </tr>
+        <tr>
+            <td><button id="num" onclick="appendnumber('7')">7</button></td>
+            <td><button id="num" onclick="appendnumber('8')">8</button></td>
+            <td><button id="num" onclick="appendnumber('9')">9</button></td>
+            <td><button id="ar"  class="br" onclick="appendnumber('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button id="num" onclick="appendnumber('4')">4</button></td>
+            <td><button id="num" onclick="appendnumber('5')">5</button></td>
+            <td><button  id="num" onclick="appendnumber('6')">6</button></td>
+            <td><button  id="ar" class="br"  onclick="appendnumber('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="num" onclick="appendnumber('1')">1</button></td>
+            <td><button id="num" onclick="appendnumber('2')">2</button></td>
+            <td><button onclick="appendnumber('3')">3</button></td>
+            <td><button class="br" onclick="appendnumber('0')">0</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="num" class="z" onclick="appendnumber('00')">00</button></td>
+            <td><button id="num" onclick="appendnumber('.')">.</button></td>
+            <td><button class="br" id="equal" class="eq" onclick="calculation()">=</button></td>
+        </tr>
+    </table>
     </div>
 </body>
 </html>
